@@ -1,4 +1,4 @@
-## Este é o trabalho 1 de Computação Natural de Marcelo Pedro.
+## Este é o trabalho 2 de Computação Natural de Marcelo Pedro.
 
 ## Instalar:
 Para baixar o código e o relatório desse trabalho basta dá o comando num terminal linux:
