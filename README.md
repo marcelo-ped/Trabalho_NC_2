@@ -4,7 +4,7 @@
 Para baixar o código e o relatório desse trabalho basta dá o comando num terminal linux:
 
 ```bash
-git pull https://github.com/marcelo-ped/trabalho_NC_2.git
+gh repo clone marcelo-ped/Trabalho_NC_2
 ```
 
 Caso não tenha o git instalado na sua máquina dê o comando abaixo:
@@ -33,6 +33,6 @@ Para execução do código deste trabalho basta executar o programa main.py seta
 Um exemplo de comando para executar o código deste trabalho é mostrado abaixo:
 
 ```bash
-python3 main.py --algorithm 1 --hybrid 1 --dataset 1
+python3 main.py --algorithm 1 --dataset 1
 ```
 
