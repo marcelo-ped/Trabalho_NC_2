@@ -7,10 +7,13 @@ Para baixar o código e o relatório desse trabalho basta dá o comando num term
 gh repo clone marcelo-ped/Trabalho_NC_2
 ```
 
-Caso não tenha o git instalado na sua máquina dê o comando abaixo:
+Caso não tenha o gh instalado na sua máquina dê os comandos abaixo:
 
 ```bash
-sudo apt-get install git
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+sudo apt update
+sudo apt install gh
 ```
 Para instalar os pacotes necessários deste trabalho basta dá o comando:
 
