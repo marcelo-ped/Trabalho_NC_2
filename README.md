@@ -36,6 +36,6 @@ Para execução do código deste trabalho basta executar o programa main.py seta
 Um exemplo de comando para executar o código deste trabalho é mostrado abaixo:
 
 ```bash
-python3 main.py --algorithm 1 --dataset 1
+python3 main.py -algorithm 1 -dataset 1
 ```
 

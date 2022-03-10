@@ -292,10 +292,13 @@ def execute_pso(index):
     dimensions = (n_inputs * n_hidden) + (n_hidden * n_classes) + n_hidden + n_classes
     start_time = time.time()
     optimizer = ps.single.GlobalBestPSO(n_particles=100, dimensions=dimensions, options=options)
-
+    iter_n = []
+    iter_n.append(5000)
+    if index == 0:
+        iter_n[0] = 1000
 
     # Perform optimization
-    cost, pos = optimizer.optimize(f,  iters=5000, verbose=3)
+    cost, pos = optimizer.optimize(f,  iters=iter_n[0], verbose=3)
     time_seconds = (time.time() - start_time)
     
     y_pred = predict(x_test, pos)

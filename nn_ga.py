@@ -3,10 +3,10 @@ import pygad.kerasga
 import numpy
 import pygad
 import pandas as pd
-from keras.models import Sequential
-from keras.layers import Dense
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
 from tensorflow.keras.layers import LeakyReLU
-from keras.utils import np_utils
+from tensorflow.keras import utils
 from sklearn.metrics import f1_score, precision_score, recall_score
 import time
 """
@@ -224,8 +224,8 @@ def execute_ga(index):
     else:
         x_train, y_train, x_test, y_test, n_inputs, n_classes  = load_cancer_dataset()
 
-    y_train = np_utils.to_categorical(y_train, n_classes)
-    y_test = np_utils.to_categorical(y_test, n_classes)
+    y_train = utils.to_categorical(y_train, n_classes)
+    y_test = utils.to_categorical(y_test, n_classes)
     input_layer  = tensorflow.keras.layers.Input(n_inputs)
     leaky_relu = LeakyReLU(alpha=0.01)
     dense_layer1 = tensorflow.keras.layers.Dense(5, input_dim=n_inputs, activation="relu")(input_layer)
